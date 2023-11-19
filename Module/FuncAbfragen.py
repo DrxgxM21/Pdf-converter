@@ -24,61 +24,6 @@ def AbfrageJPG():
 
     
 
-# def PdfName():
-#     def bestaetigen():
-#         global eingabe
-#         eingabe_wert = eingabe_entry.get()
-#         fenster.destroy()
-#         eingabe_wert += ".pdf"
-#         eingabe = eingabe_wert
-    
-#     eingabe = None
-
-#     fenster = tk.Tk()
-#     fenster.title("Name des Pdf")
-
-#     label = tk.Label(fenster, text="Gib den Namen deiner Pdfs ein, du brauchst nicht .pdf einzugeben:")
-#     label.pack(pady=10)
-
-#     eingabe_entry = tk.Entry(fenster, width=30)
-#     eingabe_entry.pack(pady=10)
-
-#     bestaetigungs_button = tk.Button(fenster, text="Bestätigen", command=bestaetigen)
-#     bestaetigungs_button.pack(pady=10)
-
-#     fenster.mainloop()
-    
-#     # eingabe_wert = bestaetigen()
-
-#     print(eingabe)
-
-#     retursn eingabe
-
-# class Gui(tk.Tk):
-#     def __inti__(self):
-#         super().__init__()
-#         self.title("Name des Pdf")
-#         self.label = tk.Label(self, text="Gib den Namen deiner Pdfs ein, du brauchst nicht .pdf einzugeben:")
-#         self.label.pack(pady=10) 
-#         self.eingabe_entry = tk.Entry(self, width=30)
-#         self.eingabe_entry.pack(pady=10)
-
-#         self.bestaetigungs_button = tk.Button(self, text="Bestätigen", command=self.bestaetigen)
-#         self.bestaetigungs_button.pack(pady=10)
-
-#         self.eingabe_wert = None
-
-#     def bestaetigen(self):
-#         self.eingabe_wert = self.eingabe_entry.get()
-#         self.eingabe_wert  += ".pdf"
-#         self.destroy()
-
-# app = Gui()
-# app.mainloop()
-
-# eingabe_wert = bestaetigen()
-
-# Global variable to store the entered text
 import tkinter as tk
 
 def call_entry_gui(callback):
@@ -105,8 +50,6 @@ def call_entry_gui(callback):
     # Create an entry widget
     entry = tk.Entry(root, width=30)
     entry.pack(pady=10)
-
-    
     
     # Create a button
     button = tk.Button(root, text="Submit", command=on_button_click)
